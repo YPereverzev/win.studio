@@ -3,10 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: #f3eee6;
-  --foreground: #140f0c;
-  --amber: #b8894a;
-  --ink: #140f0c;
+  --background: #eae8e3;
+  --foreground: #32007d;
+  --cream: #eae8e3;
+  --white: #ffffff;
+  --gray-mid: #8b8b8b;
+  --charcoal: #57585c;
+  --purple: #8257e5;
+  --purple-bright: #9e46d6;
+  --purple-deep: #7600ad;
+  --purple-rich: #6100a5;
+  --purple-night: #32007d;
+  --amber: #8257e5;
+  --ink: #32007d;
 }
 
 html {
@@ -21,8 +30,8 @@ body {
 }
 
 ::selection {
-  background: rgba(184, 137, 74, 0.35);
-  color: #140f0c;
+  background: rgba(130, 87, 229, 0.35);
+  color: #ffffff;
 }
 
 @layer utilities {

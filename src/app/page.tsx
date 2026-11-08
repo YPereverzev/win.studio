@@ -44,7 +44,7 @@ export default function HomePage() {
           <div className="mt-9 flex animate-fade-up-late flex-wrap gap-3">
             <Link
               href="/termin"
-              className="rounded-sm bg-amber px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-ink transition hover:bg-amber-soft"
+              className="rounded-sm bg-amber px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-amber-soft"
             >
               Termin buchen
             </Link>

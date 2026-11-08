@@ -51,7 +51,7 @@ export default function GutscheinePage() {
             </p>
             <Link
               href="/kontakt"
-              className="mt-8 inline-flex rounded-sm bg-amber px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-ink transition hover:bg-amber-soft"
+              className="mt-8 inline-flex rounded-sm bg-amber px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-amber-soft"
             >
               Gutschein anfragen
             </Link>

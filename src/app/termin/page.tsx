@@ -131,7 +131,7 @@ export default function TerminPage() {
                 </label>
                 <button
                   type="submit"
-                  className="rounded-sm bg-amber px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-ink transition hover:bg-amber-soft"
+                  className="rounded-sm bg-amber px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-amber-soft"
                 >
                   Anfrage senden
                 </button>

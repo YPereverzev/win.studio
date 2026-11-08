@@ -61,7 +61,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <Link
             href="/termin"
-            className="hidden rounded-sm bg-amber px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-ink transition hover:bg-amber-soft sm:inline-flex"
+            className="hidden rounded-sm bg-amber px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-amber-soft sm:inline-flex"
           >
             Termin buchen
           </Link>
@@ -113,7 +113,7 @@ export function Header() {
             <li className="pt-4">
               <Link
                 href="/termin"
-                className="inline-flex rounded-sm bg-amber px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-ink"
+                className="inline-flex rounded-sm bg-amber px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-white"
               >
                 Termin buchen
               </Link>
