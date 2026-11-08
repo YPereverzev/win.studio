@@ -109,10 +109,10 @@ export default function HomePage() {
           <Reveal>
             <div className="relative aspect-[5/4] overflow-hidden">
               <Image
-                src={images.studio}
-                alt="Atelier-Ambiente"
+                src={images.eyelashExtension}
+                alt="Wimpernverlängerung Illustration"
                 fill
-                className="object-cover"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
