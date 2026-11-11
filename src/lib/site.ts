@@ -294,15 +294,22 @@ export const faqsWax = [
   },
 ] as const;
 
+/** Local files need the GitHub Pages prefix. next/image leaves them unchanged when unoptimized. */
+const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+function salonPhoto(file: string) {
+  return `${assetBase}/images/salon_photos/${file}`;
+}
+
 /** Atmospheric stock imagery (Unsplash) — original, not from the source site */
 export const images = {
   hero: "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=2000&q=80",
-  nails: "/images/salon_photos/nails_franch.jpg",
-  lashes: "/images/salon_photos/eyebrow_extensions.jpg",
-  waxing: "/images/salon_photos/eyelash_extension_area.jpg",
+  nails: salonPhoto("nails_franch.jpg"),
+  lashes: salonPhoto("eyebrow_extensions.jpg"),
+  waxing: salonPhoto("eyelash_extension_area.jpg"),
   studio: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=80",
   /** Home “Nagelstudio mit Liebe zum Detail” strip */
-  eyelashExtension: "/images/salon_photos/cabinet_for_nail_polishes.jpg",
+  eyelashExtension: salonPhoto("cabinet_for_nail_polishes.jpg"),
   detail: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1600&q=80",
   gift: "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=1200&q=80",
   hands: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=1600&q=80",

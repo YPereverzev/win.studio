@@ -6,6 +6,9 @@ const pagesBase = process.env.GITHUB_PAGES === "true" ? "/win.studio" : "";
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: pagesBase,
+  },
   ...(pagesBase ? { basePath: pagesBase, assetPrefix: pagesBase } : {}),
   images: {
     unoptimized: true,
