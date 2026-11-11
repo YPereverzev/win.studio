@@ -8,15 +8,18 @@ import { Reveal } from "@/components/Reveal";
 import {
   faqsMani,
   images,
+  manicureExpressPrices,
   manicurePrices,
+  pedicureExpressPrices,
   pedicurePrices,
+  spaPrices,
   site,
 } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Maniküre & Pediküre",
   description:
-    "Professionelle Maniküre und Pediküre in Dortmund — klassisch, Gel, French und Spa-Pflege bei Auralis Nails.",
+    "Professionelle Maniküre und Pediküre in Grünberg — klassisch, Gel, French und Spa-Pflege bei WIN.Studio.",
 };
 
 export default function ManikuerePage() {
@@ -66,7 +69,12 @@ export default function ManikuerePage() {
       <section className="bg-mist-warm px-5 py-20 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-2">
           <PriceTable title="Maniküre" rows={manicurePrices} />
-          <PriceTable title="Pediküre / Fußpflege" rows={pedicurePrices} />
+          <PriceTable title="Express-Maniküre" rows={manicureExpressPrices} />
+          <PriceTable title="Pediküre" rows={pedicurePrices} />
+          <div className="space-y-16">
+            <PriceTable title="Express-Pediküre" rows={pedicureExpressPrices} />
+            <PriceTable title="Spa" rows={spaPrices} />
+          </div>
         </div>
       </section>
 

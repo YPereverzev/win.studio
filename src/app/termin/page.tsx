@@ -7,12 +7,13 @@ import { images, site } from "@/lib/site";
 
 const treatments = [
   "Maniküre",
+  "Express-Maniküre",
   "Pediküre",
-  "Wimpern — Neuset",
-  "Wimpern — Auffüllen",
-  "Waxing Gesicht",
-  "Waxing Körper",
-  "Kombi / Beratung",
+  "Express-Pediküre",
+  "Wimpernverlängerung",
+  "Express-Wimpernverlängerung",
+  "Augenbrauen",
+  "Waxing",
 ];
 
 export default function TerminPage() {

@@ -8,7 +8,7 @@ import { images, locations, site, strengths } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Über uns",
   description:
-    "Lernen Sie Auralis Nails kennen — Nagelstudio in Dortmund für Maniküre, Wimpern und Waxing.",
+    "Lernen Sie WIN.Studio kennen — Nagelstudio in Grünberg für Maniküre, Wimpern und Waxing.",
 };
 
 export default function UeberUnsPage() {
@@ -77,10 +77,10 @@ export default function UeberUnsPage() {
         <div className="mx-auto max-w-7xl">
           <Reveal>
             <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
-              Unsere Salons
+              Unser Salon
             </h2>
           </Reveal>
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
+          <div className="mt-12 grid max-w-md gap-8">
             {locations.map((loc, i) => (
               <Reveal key={loc.name} delay={i * 80}>
                 <div className="border-t border-ink/15 pt-6">

@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { CtaBand } from "@/components/CtaBand";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
-import { images, locations, site } from "@/lib/site";
+import { images, locations, openingHours, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktieren Sie Auralis Nails in Dortmund — Telefon, WhatsApp, E-Mail und Standorte.",
+    "Kontaktieren Sie WIN.Studio in Grünberg — Telefon, WhatsApp, Instagram und Adresse.",
 };
 
 export default function KontaktPage() {
@@ -43,20 +43,29 @@ export default function KontaktPage() {
               </div>
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-deep">
-                  E-Mail
+                  Instagram
                 </p>
                 <a
-                  href={`mailto:${site.email}`}
+                  href={site.instagram}
+                  target="_blank"
+                  rel="noreferrer"
                   className="mt-2 block text-lg text-ink hover:text-amber-deep"
                 >
-                  {site.email}
+                  {site.instagramHandle}
                 </a>
               </div>
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-deep">
                   Öffnungszeiten
                 </p>
-                <p className="mt-2 text-ink-soft">{site.hours}</p>
+                <ul className="mt-3 max-w-xs space-y-1.5 text-ink-soft">
+                  {openingHours.map((row) => (
+                    <li key={row.day} className="flex justify-between gap-6">
+                      <span>{row.day}</span>
+                      <span>{row.hours}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </Reveal>
@@ -109,10 +118,10 @@ export default function KontaktPage() {
         <div className="mx-auto max-w-7xl">
           <Reveal>
             <h2 className="font-display text-3xl tracking-tight text-ink">
-              Standorte
+              Standort
             </h2>
           </Reveal>
-          <div className="mt-10 grid gap-8 md:grid-cols-3">
+          <div className="mt-10 grid max-w-md gap-8">
             {locations.map((loc, i) => (
               <Reveal key={loc.name} delay={i * 70}>
                 <div className="border-t border-ink/15 pt-5">

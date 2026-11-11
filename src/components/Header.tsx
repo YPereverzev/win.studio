@@ -37,7 +37,7 @@ export function Header() {
             {site.shortName}
           </span>
           <span className="mt-0.5 block text-[10px] font-semibold uppercase tracking-[0.28em] text-mist/60">
-            Nails · {site.city}
+            Studio · {site.city}
           </span>
         </Link>
 
