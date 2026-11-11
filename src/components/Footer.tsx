@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { nav, site } from "@/lib/site";
+import { nav, openingHours, site } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -45,16 +45,24 @@ export function Footer() {
             >
               {site.phone}
             </a>
+            <a
+              href={site.whatsappHref}
+              className="mt-2 block text-sm text-mist/75 hover:text-amber-soft"
+            >
+              WhatsApp
+            </a>
           </div>
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-mist/45">
-              Schreiben Sie uns
+              Instagram
             </p>
             <a
-              href={`mailto:${site.email}`}
+              href={site.instagram}
+              target="_blank"
+              rel="noreferrer"
               className="mt-2 block text-sm text-mist/75 hover:text-amber-soft"
             >
-              {site.email}
+              {site.instagramHandle}
             </a>
           </div>
           <div>
@@ -65,16 +73,21 @@ export function Footer() {
               {site.address}
               <br />
               {site.zip}
-              <br />
-              <span className="text-mist/50">{site.hours}</span>
             </p>
+            <ul className="mt-3 space-y-1 text-sm text-mist/60">
+              {openingHours.map((row) => (
+                <li key={row.day} className="flex justify-between gap-6">
+                  <span>{row.day}</span>
+                  <span>{row.hours}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
 
       <div className="border-t border-white/5 px-5 py-5 text-center text-xs text-mist/40 lg:px-8">
-        © {new Date().getFullYear()} {site.name} · Demo-Marketingseite · Keine
-        Verbindung zur Originalmarke
+        © {new Date().getFullYear()} {site.name}
       </div>
     </footer>
   );

@@ -7,12 +7,13 @@ import { images, site } from "@/lib/site";
 
 const treatments = [
   "Maniküre",
+  "Express-Maniküre",
   "Pediküre",
-  "Wimpern — Neuset",
-  "Wimpern — Auffüllen",
-  "Waxing Gesicht",
-  "Waxing Körper",
-  "Kombi / Beratung",
+  "Express-Pediküre",
+  "Wimpernverlängerung",
+  "Express-Wimpernverlängerung",
+  "Augenbrauen",
+  "Waxing",
 ];
 
 export default function TerminPage() {
@@ -131,7 +132,7 @@ export default function TerminPage() {
                 </label>
                 <button
                   type="submit"
-                  className="rounded-sm bg-amber px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-ink transition hover:bg-amber-soft"
+                  className="rounded-sm bg-amber px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-amber-soft"
                 >
                   Anfrage senden
                 </button>

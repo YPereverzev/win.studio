@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: `%s · ${site.name}`,
   },
   description:
-    "Nagelstudio in Dortmund: Maniküre, Pediküre, Wimpernverlängerung und Waxing — präzise Pflege in ruhigem Atelier-Ambiente.",
+    `Nagelstudio in ${site.city}: Maniküre, Pediküre, Wimpernverlängerung und Waxing — präzise Pflege in ruhigem Atelier-Ambiente.`,
 };
 
 export default function RootLayout({

@@ -10,7 +10,7 @@ import { faqsWax, images, waxingPrices } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Waxing & Epilation",
   description:
-    "Professionelles Waxing für Gesicht und Körper in Dortmund — sanfte Wachs-Epilation mit klaren Hygienestandards.",
+    "Professionelles Waxing für Gesicht und Körper in Grünberg — sanfte Wachs-Epilation mit klaren Hygienestandards.",
 };
 
 const zones = [
@@ -24,7 +24,7 @@ const zones = [
   },
   {
     title: "Intimbereich",
-    text: "Klassisch bis Brazilian — diskret, hygienisch und mit erfahrener Technik.",
+    text: "Intim inkl. Pofalte, Bikini Lines, Pofalte und Pobacken — diskret, hygienisch und mit erfahrener Technik.",
   },
 ];
 
@@ -91,7 +91,7 @@ export default function WaxingPage() {
 
       <section className="bg-mist px-5 py-20 lg:px-8">
         <div className="mx-auto max-w-3xl">
-          <PriceTable title="Preise Waxing" rows={waxingPrices} />
+          <PriceTable title="Waxing für Frauen" rows={waxingPrices} />
         </div>
       </section>
 

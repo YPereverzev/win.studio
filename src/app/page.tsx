@@ -26,9 +26,10 @@ export default function HomePage() {
           className="object-cover object-center opacity-50 animate-drift"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-steam-glow opacity-90" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/30" />
-        <div className="absolute inset-0 grain" />
+        {/* <div className="absolute inset-0 bg-steam-glow opacity-90" /> */}
+        {/* <div className="absolute inset-0   opacity-0" /> */}
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/30" /> */}
+        {/* <div className="absolute inset-0 grain" /> */}
 
         <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-5 pb-20 pt-28 lg:px-8 lg:pb-24">
           <p className="animate-fade-up font-display text-5xl tracking-tight text-mist sm:text-6xl lg:text-7xl">
@@ -44,7 +45,7 @@ export default function HomePage() {
           <div className="mt-9 flex animate-fade-up-late flex-wrap gap-3">
             <Link
               href="/termin"
-              className="rounded-sm bg-amber px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-ink transition hover:bg-amber-soft"
+              className="rounded-sm bg-amber px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-amber-soft"
             >
               Termin buchen
             </Link>
@@ -82,7 +83,6 @@ export default function HomePage() {
                       className="object-cover transition duration-700 group-hover:scale-105"
                       sizes="(max-width: 1024px) 100vw, 33vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-transparent" />
                     <div className="absolute inset-x-0 bottom-0 p-6 text-mist">
                       <h3 className="font-display text-2xl tracking-tight">
                         {s.title}
@@ -109,10 +109,10 @@ export default function HomePage() {
           <Reveal>
             <div className="relative aspect-[5/4] overflow-hidden">
               <Image
-                src={images.studio}
-                alt="Atelier-Ambiente"
+                src={images.eyelashExtension}
+                alt="Schrank mit Nagellacken im Atelier"
                 fill
-                className="object-cover"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
@@ -171,13 +171,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl">
           <Reveal>
             <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-amber-deep">
-              Standorte
+              Standort
             </p>
             <h2 className="mt-3 font-display text-3xl tracking-tight text-ink sm:text-4xl">
-              Maniküre &amp; Beauty in Dortmund
+              Maniküre &amp; Beauty in {site.city}
             </h2>
           </Reveal>
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
+          <div className="mt-12 grid max-w-md gap-8">
             {locations.map((loc, i) => (
               <Reveal key={loc.name} delay={i * 80}>
                 <div className="border-t border-ink/15 pt-6">

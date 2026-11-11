@@ -9,26 +9,43 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Brand palette — cream / gray / purple
+        cream: {
+          DEFAULT: "#EAE8E3",
+          white: "#FFFFFF",
+        },
+        gray: {
+          mid: "#8B8B8B",
+          charcoal: "#57585C",
+        },
+        purple: {
+          DEFAULT: "#8257E5",
+          bright: "#9E46D6",
+          deep: "#7600AD",
+          rich: "#6100A5",
+          night: "#32007D",
+        },
+        // Semantic aliases used across components
         ink: {
-          DEFAULT: "#140f0c",
-          soft: "#2a211b",
-          muted: "#5c4f45",
+          DEFAULT: "#32007D",
+          soft: "#57585C",
+          muted: "#8B8B8B",
         },
         mist: {
-          DEFAULT: "#f3eee6",
-          warm: "#e8dfd2",
-          deep: "#d4c7b5",
+          DEFAULT: "#EAE8E3",
+          warm: "#FFFFFF",
+          deep: "#E0DDD6",
         },
         amber: {
-          DEFAULT: "#b8894a",
-          soft: "#d4b483",
-          deep: "#8a6432",
+          DEFAULT: "#8257E5",
+          soft: "#9E46D6",
+          deep: "#7600AD",
         },
         moss: {
-          DEFAULT: "#3f4a3c",
-          soft: "#5a6b56",
+          DEFAULT: "#6100A5",
+          soft: "#7600AD",
         },
-        steam: "#9aa8a0",
+        steam: "#8B8B8B",
       },
       fontFamily: {
         display: ["var(--font-display)", "serif"],
@@ -36,11 +53,11 @@ const config: Config = {
       },
       backgroundImage: {
         "steam-glow":
-          "radial-gradient(ellipse 80% 50% at 20% 20%, rgba(184,137,74,0.18), transparent 55%), radial-gradient(ellipse 60% 40% at 80% 10%, rgba(90,107,86,0.2), transparent 50%), linear-gradient(165deg, #140f0c 0%, #1c1612 45%, #241c16 100%)",
+          "radial-gradient(ellipse 80% 50% at 20% 20%, rgba(130,87,229,0.35), transparent 55%), radial-gradient(ellipse 60% 40% at 80% 10%, rgba(158,70,214,0.28), transparent 50%), linear-gradient(165deg, #32007D 0%, #6100A5 45%, #7600AD 100%)",
         "section-wash":
-          "linear-gradient(180deg, #f3eee6 0%, #ebe3d6 50%, #f3eee6 100%)",
+          "linear-gradient(180deg, #EAE8E3 0%, #FFFFFF 50%, #EAE8E3 100%)",
         "footer-deep":
-          "linear-gradient(180deg, #1a1410 0%, #0e0b09 100%)",
+          "linear-gradient(180deg, #32007D 0%, #1a0040 100%)",
       },
       keyframes: {
         "fade-up": {

@@ -5,26 +5,36 @@ import { Faq } from "@/components/Faq";
 import { PageHero } from "@/components/PageHero";
 import { PriceTable } from "@/components/PriceTable";
 import { Reveal } from "@/components/Reveal";
-import { faqsLashes, images, lashPrices } from "@/lib/site";
+import {
+  browPrices,
+  faqsLashes,
+  images,
+  lashExpressNote,
+  lashExpressPrices,
+  lashJuniorPrices,
+  lashRefillNote,
+  lashRemovalPrices,
+  lashTopPrices,
+} from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Wimpernverlängerung",
   description:
-    "Classic, Volumen und Mega-Volumen Wimpernverlängerung in Dortmund — natürlicher Schwung oder dramatischer Look.",
+    "1:1 und Volumentechnik in Grünberg — Neuauflage, Auffüllen und Express bei WIN.Studio.",
 };
 
 const looks = [
   {
-    title: "Classic 1:1",
+    title: "1:1 Methode",
     text: "Eine Extension pro Naturwimper — klar definiert, elegant und alltagstauglich.",
   },
   {
-    title: "Volumen 2–3D",
+    title: "Volumentechnik",
     text: "Fächertechnik für mehr Dichte bei feinen oder lückigen Naturwimpern.",
   },
   {
-    title: "Lifting & Färben",
-    text: "Ohne Extensions: Naturwimpern werden geliftet und getönt für offenen Blick.",
+    title: "Express",
+    text: "Neuauflage oder Auffüllen in kürzerer Zeit — bis 4 Wochen, danach nur Neuanlage.",
   },
 ];
 
@@ -95,8 +105,27 @@ export default function WimpernPage() {
       </section>
 
       <section className="bg-mist-warm px-5 py-20 lg:px-8">
-        <div className="mx-auto max-w-3xl">
-          <PriceTable title="Preise Wimpern" rows={lashPrices} />
+        <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-2">
+          <div>
+            <PriceTable title="Top Master" rows={lashTopPrices} />
+            <p className="mt-4 text-sm text-ink-muted">{lashRefillNote}</p>
+          </div>
+          <div>
+            <PriceTable title="Junior Master" rows={lashJuniorPrices} />
+            <p className="mt-4 text-sm text-ink-muted">{lashRefillNote}</p>
+          </div>
+          <div>
+            <PriceTable
+              title="Express-Wimpernverlängerung"
+              rows={lashExpressPrices}
+            />
+            <p className="mt-4 text-sm text-ink-muted">{lashExpressNote}</p>
+          </div>
+          <PriceTable title="Entfernung" rows={lashRemovalPrices} />
+          <PriceTable
+            title="Augenbrauen & Wimpernbehandlungen"
+            rows={browPrices}
+          />
         </div>
       </section>
 
